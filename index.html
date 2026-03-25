@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotaryPilot - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.7; padding: 40px 20px; max-width: 800px; margin: 0 auto; background: #fafafa; }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #1a365d; }
+    h2 { font-size: 20px; margin-top: 32px; margin-bottom: 12px; color: #1a365d; }
+    h3 { font-size: 16px; margin-top: 20px; margin-bottom: 8px; color: #333; }
+    p, li { font-size: 15px; margin-bottom: 12px; color: #444; }
+    ul { padding-left: 24px; margin-bottom: 16px; }
+    .date { color: #888; font-size: 14px; margin-bottom: 32px; }
+    .highlight { background: #e8f4fd; border-left: 4px solid #1a365d; padding: 16px; border-radius: 4px; margin: 20px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; font-size: 14px; }
+    th { background: #f1f5f9; font-weight: 600; color: #1a365d; }
+    a { color: #1a91eb; }
+  </style>
+</head>
+<body>
+
+<h1>NotaryPilot Privacy Policy</h1>
+<p class="date">Effective Date: March 23, 2026 | Last Updated: March 23, 2026</p>
+
+<div class="highlight">
+  <strong>Summary:</strong> NotaryPilot stores your notary business data primarily on your device. We collect only what's necessary to provide the app's features. We never sell your data. You can export or delete your data at any time.
+</div>
+
+<h2>1. Who We Are</h2>
+<p>NotaryPilot ("we," "our," or "us") is a mobile application designed to help notary publics and signing agents manage their business operations, including journal entries, assignments, invoicing, mileage tracking, and compliance management.</p>
+<p>For questions about this policy, contact us at: <strong>privacy@notarypilot.com</strong></p>
+
+<h2>2. Information We Collect</h2>
+
+<h3>2.1 Information You Provide</h3>
+<table>
+  <tr><th>Data Type</th><th>Purpose</th><th>Storage</th></tr>
+  <tr><td>Account credentials (email, password)</td><td>Authentication</td><td>Supabase (cloud)</td></tr>
+  <tr><td>Name, phone number</td><td>Profile & invoicing</td><td>Device + cloud sync</td></tr>
+  <tr><td>Commission details (state, number, expiration)</td><td>Compliance tracking</td><td>Device + cloud sync</td></tr>
+  <tr><td>E&O insurance and bond details</td><td>Compliance alerts</td><td>Device + cloud sync</td></tr>
+  <tr><td>Journal entries (signer names, addresses, document details)</td><td>Legal notary journal</td><td>Device + cloud sync</td></tr>
+  <tr><td>Assignment details (addresses, fees, notes)</td><td>Business management</td><td>Device + cloud sync</td></tr>
+  <tr><td>Client/company information</td><td>CRM and invoicing</td><td>Device + cloud sync</td></tr>
+  <tr><td>Financial data (fees, expenses, invoices)</td><td>Accounting and tax prep</td><td>Device + cloud sync</td></tr>
+</table>
+
+<h3>2.2 Information Collected Automatically</h3>
+<table>
+  <tr><th>Data Type</th><th>Purpose</th><th>When</th></tr>
+  <tr><td>Device location (GPS)</td><td>Auto-fill journal entry location; mileage tracking</td><td>Only when you create a journal entry or log mileage</td></tr>
+  <tr><td>Camera images</td><td>ID scanning, thumbprint capture, receipt scanning</td><td>Only when you explicitly tap a capture button</td></tr>
+</table>
+
+<h3>2.3 Information We Do NOT Collect</h3>
+<ul>
+  <li>Social Security Numbers (SSNs)</li>
+  <li>Bank account or credit card numbers</li>
+  <li>Biometric data (fingerprints are stored as photos only, not as biometric identifiers)</li>
+  <li>Browsing history or activity outside the app</li>
+  <li>Contact lists or call logs</li>
+  <li>Advertising identifiers</li>
+</ul>
+
+<h2>3. How We Use Your Information</h2>
+<ul>
+  <li><strong>Provide app features:</strong> Journal management, assignment tracking, invoicing, mileage logging, tax reporting, and compliance alerts.</li>
+  <li><strong>State compliance:</strong> Configure journal fields based on your commissioning state's legal requirements, including enforcing prohibited fields (e.g., blocking ID number recording in Texas and Montana).</li>
+  <li><strong>Notifications:</strong> Send push notifications for commission, E&O, and bond expiration reminders and ship-back deadline alerts.</li>
+  <li><strong>Data export:</strong> Generate CSV exports of your journal entries and tax summaries when you request them.</li>
+</ul>
+
+<p><strong>We do not use your data for:</strong></p>
+<ul>
+  <li>Advertising or ad targeting</li>
+  <li>Sale to third parties</li>
+  <li>Profiling or automated decision-making</li>
+  <li>Training AI or machine learning models</li>
+</ul>
+
+<h2>4. Data Storage and Security</h2>
+
+<h3>4.1 Offline-First Architecture</h3>
+<p>NotaryPilot uses an offline-first design. Your data is stored locally on your device in an encrypted SQLite database and synced to our cloud service (Supabase) when an internet connection is available. The app is fully functional without internet access.</p>
+
+<h3>4.2 Cloud Storage</h3>
+<p>Cloud data is stored on Supabase infrastructure, which uses:</p>
+<ul>
+  <li>PostgreSQL databases with encryption at rest (AES-256)</li>
+  <li>TLS 1.2+ encryption for all data in transit</li>
+  <li>Row-level security (RLS) ensuring users can only access their own data</li>
+  <li>Infrastructure hosted in SOC 2 Type II certified data centers</li>
+</ul>
+
+<h3>4.3 Sensitive Data Handling</h3>
+<ul>
+  <li>ID photos, signatures, and thumbprint images are stored in your device's secure document directory and, when synced, in encrypted cloud storage accessible only to your account.</li>
+  <li>Authentication tokens are stored in your device's secure keychain (iOS) or encrypted shared preferences (Android).</li>
+  <li>Journal entries are locked after creation (tamper-evident) and cannot be modified.</li>
+</ul>
+
+<h2>5. Data Sharing</h2>
+<p>We do not sell, rent, or trade your personal information. We share data only in these limited circumstances:</p>
+<ul>
+  <li><strong>Service providers:</strong> Supabase (database hosting), Apple/Google (app distribution and in-app purchases). These providers process data only as necessary to provide their services to us.</li>
+  <li><strong>Legal requirements:</strong> If required by law, subpoena, or court order.</li>
+  <li><strong>Your direction:</strong> When you explicitly export or share your data using the app's export features.</li>
+</ul>
+
+<h2>6. Your Rights and Choices</h2>
+
+<h3>6.1 All Users</h3>
+<ul>
+  <li><strong>Access:</strong> View all your data within the app at any time.</li>
+  <li><strong>Export:</strong> Export your journal entries and tax summaries as CSV files from Settings.</li>
+  <li><strong>Delete:</strong> Delete your account and all associated data by contacting privacy@notarypilot.com. We will process deletion requests within 30 days.</li>
+  <li><strong>Location:</strong> You can deny or revoke location permissions at any time in your device settings. The app will continue to function; you will need to enter locations manually.</li>
+  <li><strong>Camera:</strong> You can deny camera permissions. ID and receipt capture features will be unavailable, but all other features work normally.</li>
+  <li><strong>Notifications:</strong> You can disable push notifications in your device settings at any time.</li>
+</ul>
+
+<h3>6.2 California Residents (CCPA/CPRA)</h3>
+<p>If you are a California resident, you have the right to:</p>
+<ul>
+  <li>Know what personal information we collect and how it is used</li>
+  <li>Request deletion of your personal information</li>
+  <li>Opt out of the sale of personal information (we do not sell personal information)</li>
+  <li>Non-discrimination for exercising your privacy rights</li>
+</ul>
+<p>To exercise these rights, contact privacy@notarypilot.com.</p>
+
+<h3>6.3 EU/EEA Residents (GDPR)</h3>
+<p>If applicable, you have the right to access, rectify, erase, restrict processing, data portability, and object to processing of your personal data. Our legal basis for processing is contract performance (providing the app's features) and your consent (for location and camera access). Contact privacy@notarypilot.com to exercise these rights.</p>
+
+<h2>7. Data Retention</h2>
+<ul>
+  <li><strong>Journal entries:</strong> Retained for as long as your account is active. Note that many states require notaries to retain journal records for 3-10 years. We recommend exporting your data before deleting your account.</li>
+  <li><strong>Account data:</strong> Deleted within 30 days of account deletion request.</li>
+  <li><strong>Local device data:</strong> Remains on your device until you uninstall the app or clear app data.</li>
+</ul>
+
+<h2>8. Children's Privacy</h2>
+<p>NotaryPilot is designed for professional notary publics and is not intended for use by individuals under 18 years of age. We do not knowingly collect personal information from children. If we learn we have collected information from a child under 18, we will delete it promptly.</p>
+
+<h2>9. Third-Party Services</h2>
+<table>
+  <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+  <tr><td>Supabase</td><td>Authentication, database, file storage</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+  <tr><td>Apple App Store</td><td>App distribution, subscriptions</td><td><a href="https://www.apple.com/privacy/">apple.com/privacy</a></td></tr>
+  <tr><td>Google Play Store</td><td>App distribution, subscriptions</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td></tr>
+  <tr><td>Expo (EAS)</td><td>App build and update delivery</td><td><a href="https://expo.dev/privacy">expo.dev/privacy</a></td></tr>
+</table>
+
+<h2>10. Changes to This Policy</h2>
+<p>We may update this privacy policy from time to time. We will notify you of material changes by posting a notice within the app. Your continued use of NotaryPilot after changes constitutes acceptance of the updated policy.</p>
+
+<h2>11. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this privacy policy or your data:</p>
+<ul>
+  <li><strong>Email:</strong> privacy@notarypilot.com</li>
+</ul>
+
+</body>
+</html>
